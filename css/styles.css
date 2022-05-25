@@ -4,7 +4,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 120px;
+    margin-left: 100px;
     margin-right: 120px;
     margin-top: 87px;
 
@@ -13,6 +13,7 @@ header {
 #header-title {
     font-size: 24px;
     font-weight: 900;
+
 }
 
 nav ul {
@@ -61,8 +62,8 @@ nav a {
 }
 
 #top-paragraph {
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: 900;
+    font-size: 18px;
 
 }
 
@@ -259,4 +260,61 @@ h4 {
     background-color: #78788574;
     padding: 5px;
     border-radius: 20px;
+}
+
+/* Media Quaries */
+
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+
+    .container {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+
+
+    }
+
+    .top-details {
+        margin-bottom: 100px;
+    }
+
+
+    .top-section,
+    .header,
+    .end-section,
+    nav ul {
+        flex-direction: column;
+
+
+    }
+
+    .logo-section,
+    .products {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+    }
+
+}
+
+/* Tablet Device */
+@media only screen and (min-width:688px) and (max-width:992px) {
+
+    .container {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+        margin-right: 10px;
+    }
+
+    .end-image {
+        margin-right: 30px;
+    }
+
+    .logo-section,
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0;
+    }
+
 }
